@@ -523,7 +523,7 @@
                             <th>Delivered Orders <button class="remove-col-btn" data-col="deliveredOrders">×</button></th>
                             <th>SLA <button class="remove-col-btn" data-col="sla">×</button></th>
                             <th>O2D <button class="remove-col-btn" data-col="o2d">×</button></th>
-                            <th>Breadx% <button class="remove-col-btn" data-col="breadx">×</button></th>
+                            <th>Breach% <button class="remove-col-btn" data-col="Breach">×</button></th>
                             <th>Deep Pain% <button class="remove-col-btn" data-col="deepPain">×</button></th>
                             <th>Cancellation% <button class="remove-col-btn" data-col="cancellation">×</button></th>
                             <th>RTO% <button class="remove-col-btn" data-col="rto">×</button></th>
@@ -541,7 +541,7 @@
                             <td><input type="number" placeholder="0" class="entry-delivered-orders"></td>
                             <td><input type="number" step="0.01" placeholder="0.00" class="entry-sla"></td>
                             <td><input type="number" step="0.01" placeholder="0.00" class="entry-o2d"></td>
-                            <td><input type="text" placeholder="0.00%" class="entry-breadx"></td>
+                            <td><input type="text" placeholder="0.00%" class="entry-Breach"></td>
                             <td><input type="text" placeholder="0.00%" class="entry-deep-pain"></td>
                             <td><input type="text" placeholder="0.00%" class="entry-cancellation"></td>
                             <td><input type="text" placeholder="0.00%" class="entry-rto"></td>
@@ -574,7 +574,7 @@
                 deliveredOrders: 663,
                 sla: 48.42,
                 o2d: 21.23,
-                breadx: "0.26%",
+                Breach: "0.26%",
                 deepPain: "0.00%",
                 cancellation: "9.00%",
                 rto: "0.51%",
@@ -589,7 +589,7 @@
                 deliveredOrders: 493,
                 sla: 57.55,
                 o2d: 27.55,
-                breadx: "0.33%",
+                Breach: "0.33%",
                 deepPain: "0.00%",
                 cancellation: "12.03%",
                 rto: "0.98%",
@@ -604,7 +604,7 @@
                 deliveredOrders: 547,
                 sla: 47.68,
                 o2d: 16.85,
-                breadx: "0.49%",
+                Breach: "0.49%",
                 deepPain: "0.33%",
                 cancellation: "3.60%",
                 rto: "1.64%",
@@ -619,7 +619,7 @@
                 deliveredOrders: 416,
                 sla: 51.92,
                 o2d: 24.79,
-                breadx: "1.20%",
+                Breach: "1.20%",
                 deepPain: "0.00%",
                 cancellation: "10.18%",
                 rto: "1.40%",
@@ -634,7 +634,7 @@
                 deliveredOrders: 487,
                 sla: 49,
                 o2d: 19.03,
-                breadx: "0.71%",
+                Breach: "0.71%",
                 deepPain: "0.00%",
                 cancellation: "8.87%",
                 rto: "1.60%",
@@ -652,7 +652,7 @@
             deliveredOrders: { type: 'number', display: 'Delivered Orders' },
             sla: { type: 'number', display: 'SLA', step: '0.01' },
             o2d: { type: 'number', display: 'O2D', step: '0.01' },
-            breadx: { type: 'text', display: 'Breadx%' },
+            Breach: { type: 'text', display: 'Breach%' },
             deepPain: { type: 'text', display: 'Deep Pain%' },
             cancellation: { type: 'text', display: 'Cancellation%' },
             rto: { type: 'text', display: 'RTO%' },
@@ -708,7 +708,7 @@
                             value = formatNumber(value);
                         }
                         const cellClass = col.includes('cancellation') || col.includes('rto') || 
-                                        col.includes('breadx') || col.includes('deepPain') ? 
+                                        col.includes('Breach') || col.includes('deepPain') ? 
                                         'negative-metric' : 'positive-metric';
                         row.innerHTML += `<td class="${cellClass}">${value}</td>`;
                     }
@@ -1092,7 +1092,7 @@
                     deliveredOrders: 663,
                     sla: 48.42,
                     o2d: 21.23,
-                    breadx: "0.26%",
+                    Breach: "0.26%",
                     deepPain: "0.00%",
                     cancellation: "9.00%",
                     rto: "0.51%",
@@ -1107,7 +1107,7 @@
                     deliveredOrders: 493,
                     sla: 57.55,
                     o2d: 27.55,
-                    breadx: "0.33%",
+                    Breach: "0.33%",
                     deepPain: "0.00%",
                     cancellation: "12.03%",
                     rto: "0.98%",
@@ -1122,7 +1122,7 @@
                     deliveredOrders: 547,
                     sla: 47.68,
                     o2d: 16.85,
-                    breadx: "0.49%",
+                    Breach: "0.49%",
                     deepPain: "0.33%",
                     cancellation: "3.60%",
                     rto: "1.64%",
@@ -1137,7 +1137,7 @@
                     deliveredOrders: 416,
                     sla: 51.92,
                     o2d: 24.79,
-                    breadx: "1.20%",
+                    Breach: "1.20%",
                     deepPain: "0.00%",
                     cancellation: "10.18%",
                     rto: "1.40%",
@@ -1152,7 +1152,7 @@
                     deliveredOrders: 487,
                     sla: 49,
                     o2d: 19.03,
-                    breadx: "0.71%",
+                    Breach: "0.71%",
                     deepPain: "0.00%",
                     cancellation: "8.87%",
                     rto: "1.60%",
